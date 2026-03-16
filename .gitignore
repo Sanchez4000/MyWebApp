@@ -1,0 +1,31 @@
+# === Специфика среды разработки (IDE) ===
+.vscode/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# === ASP.NET Backend (C#) ===
+[Bb]in/
+[Ob]j/
+Backend/**/[Bb]in/
+Backend/**/[Ob]j/
+# Секреты и настройки локального запуска
+Backend/**/appsettings.Development.json
+Backend/**/Properties/launchSettings.json
+
+# === Frontend (Vue 3 / ClientApp) ===
+# Игнорируем тяжелую папку с пакетами (аналог packages/bin)
+Frontend/ClientApp/node_modules/
+# Результат сборки (то, что летит на сервер)
+Frontend/ClientApp/dist/
+# Логи ошибок npm
+Frontend/ClientApp/npm-debug.log*
+Frontend/ClientApp/yarn-error.log*
+
+# === Общие системные файлы ===
+.DS_Store
+thumbs.db
+.env
+.env.local

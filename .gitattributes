@@ -1,0 +1,14 @@
+# Режим автоопределения текста: нормализация к LF при коммите
+* text=auto eol=lf
+
+# Явное указание для типов файлов проекта (на всякий случай)
+*.cs text eol=lf
+*.ts text eol=lf
+*.vue text eol=lf
+*.json text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+
+# Решение для Visual Studio: файлы решений лучше оставить с CRLF, 
+# так как старые версии VS могут на них ругаться
+*.sln text eol=crlf
