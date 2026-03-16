@@ -19,7 +19,7 @@ Backend/**/Properties/launchSettings.json
 # Игнорируем тяжелую папку с пакетами (аналог packages/bin)
 Frontend/ClientApp/node_modules/
 # Результат сборки (то, что летит на сервер)
-# Frontend/ClientApp/dist/
+Frontend/ClientApp/dist/
 # Логи ошибок npm
 Frontend/ClientApp/npm-debug.log*
 Frontend/ClientApp/yarn-error.log*
