@@ -1,3 +1,4 @@
+using TestWebApi.Api.ExceptionHandlers;
 using TestWebApi.Application;
 using TestWebApi.Infrastructure;
 
@@ -16,6 +17,8 @@ builder.Services.AddMediatR(configuration =>
 {
     configuration.RegisterServicesFromAssembly(typeof(IAssemblyMarker).Assembly);
 });
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 var connectionString =
     builder.Configuration.GetConnectionString("DefaultConnection") ??
     throw new InvalidOperationException("Connection string 'DefaultConnection' is not configured.");
