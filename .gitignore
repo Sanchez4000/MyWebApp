@@ -7,10 +7,10 @@
 *.suo
 
 # === ASP.NET Backend (C#) ===
-[Bb]in/
-[Ob]j/
-Backend/**/[Bb]in/
-Backend/**/[Ob]j/
+Backend/**/**/bin/
+Backend/**/**/obj/
+Backend/**/**/Bin/
+Backend/**/**/Obj/
 # Секреты и настройки локального запуска
 Backend/**/appsettings.Development.json
 Backend/**/Properties/launchSettings.json
